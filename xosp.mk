@@ -14,11 +14,16 @@
 
 $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 
-# Inherit some common sm stuff.
-$(call inherit-product, vendor/sm/config/common_full_phone.mk)
+# Inherit some common xosp stuff.
+$(call inherit-product, vendor/xosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := sm_kenzo
+# Inherit some propietary XOSP stuff
+$(call inherit-product, vendor/xosp/config/xosp.mk)
+
+PRODUCT_NAME := xosp_kenzo
 BOARD_VENDOR := xiaomi
 TARGET_VENDOR := xiaomi
 PRODUCT_DEVICE := kenzo
 TARGET_DEVICE := kenzo
+RELEASE_TYPE := XOSP_UNOFFICIAL
+IS_ARM64 := TRUE
