@@ -67,8 +67,8 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 BOARD_USES_QCOM_HARDWARE := true
 
 #LZMA compression
-WITH_LZMA_OTA:= true	
-
+#WITH_LZMA_OTA:= true
+	
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += device/xiaomi/kenzo/cmhw
