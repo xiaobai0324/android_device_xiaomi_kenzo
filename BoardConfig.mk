@@ -71,7 +71,12 @@ BOARD_USES_QCOM_HARDWARE := true
 	
 # CMHW
 BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += device/xiaomi/kenzo/cmhw
+BOARD_HARDWARE_CLASS := \
+    $(DEVICE_PATH)/cmhw \
+    hardware/cyanogen/cmhw
+
+# Tap-to-Wake
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
 
 # Powerhal
 TARGET_POWERHAL_VARIANT := qcom
