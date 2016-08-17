@@ -15,7 +15,7 @@
 $(call inherit-product, device/xiaomi/kenzo/full_kenzo.mk)
 
 # Inherit some common aokp stuff.
-$(call inherit-product, vendor/aokp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
 
 PRODUCT_NAME := aokp_kenzo
 BOARD_VENDOR := xiaomi
