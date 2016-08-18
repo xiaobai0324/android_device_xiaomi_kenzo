@@ -306,9 +306,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.cpp.duplication=false
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     fingerprintd
@@ -346,6 +343,10 @@ PRODUCT_PACKAGES += \
     libbson \
     libcnefeatureconfig \
     libtinyxml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.cpp.duplication=false \
+    ro.product.locale=zh-CN
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0 \
